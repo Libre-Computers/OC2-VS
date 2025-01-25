@@ -45,7 +45,7 @@ dependencies {
 
     include(modApi "dev.architectury:architectury-forge:${rootProject.architectury_version}")
 
-    modApi("org.valkyrienskies:valkyrienskies-119-forge:$vs2_version") { transitive = false }
+    modApi("org.valkyrienskies:valkyrienskies-118-forge:$vs2_version") { transitive = false }
 
     implementation("org.valkyrienskies.core:api:$vs_core_version")
     implementation("org.valkyrienskies.core:api-game:$vs_core_version")
@@ -69,7 +69,6 @@ processResources {
     }
 }
 
-// This block is where your mappings version is also specified
 tasks.withType(JavaCompile).configureEach {
     // Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
     it.options.release = 17
