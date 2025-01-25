@@ -35,7 +35,7 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.oc2_vs]]
-modId = "oc2"
+modId = "oc2r"
 mandatory = true
 versionRange = "[0.0.0,)"
 ordering = "AFTER"
