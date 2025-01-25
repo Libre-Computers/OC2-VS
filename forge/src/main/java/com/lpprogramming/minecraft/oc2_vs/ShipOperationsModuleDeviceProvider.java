@@ -13,15 +13,12 @@ import java.util.Optional;
 public final class ShipOperationsModuleDeviceProvider extends AbstractItemDeviceProvider {
     public ShipOperationsModuleDeviceProvider() {
         super(Items.SHIP_OPERATIONS_MODULE);
-        System.out.println("xyzzy, making SOMDP");
-        
     }
 
     ///////////////////////////////////////////////////////////////////
 
     @Override
     protected Optional<ItemDevice> getItemDevice(final ItemDeviceQuery query) {
-        System.out.println("xyzzy getting item device");
         return query.getContainerBlockEntity().map(blockEntity ->
             new ShipOperationsModuleDevice(query.getItemStack(), blockEntity));
     }
