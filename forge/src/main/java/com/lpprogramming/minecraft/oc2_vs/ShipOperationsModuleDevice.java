@@ -207,13 +207,6 @@ public final class ShipOperationsModuleDevice extends AbstractItemRPCDevice impl
     }
 
 
-    @Callback(name = "getBuoyantFactor")
-    public double getBuoyantFactor() {
-        if (this.ship instanceof PhysShip ps) {
-            return ps.getBuoyantFactor();
-        }
-        return -1;
-    }
     /*
     @LuaFunction
     fun doFluidDrag() = this.physShip.doFluidDrag
