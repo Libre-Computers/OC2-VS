@@ -56,7 +56,8 @@ dependencies {
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 
     implementation "thedarkcolour:kotlinforforge:$forge_kotlin_version"
-    implementation files('libs/oc2r.jar')
+//    implementation files('libs/oc2r.jar')
+    implementation fileTree(dir: "../libs", includes: ['*.jar'])
 
 
 }
